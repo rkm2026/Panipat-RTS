@@ -139,22 +139,6 @@ Responsible for:
 
 ---
 
-# Technical Decisions
-
----
-
-## Why Manual Movement Instead of NavMesh?
-
-For this prototype:
-
-- Battlefield terrain is simple
-- Faster implementation
-- Easier debugging
-
-NavMesh would be more useful for complex pathfinding environments.
-
----
-
 ## Why Separate Scripts?
 
 Avoided putting all logic in one large script.
@@ -167,19 +151,7 @@ Benefits:
 
 ---
 
-## Why Basic Collision Instead of Advanced Pathfinding?
 
-Assignment required basic collision avoidance.
-
-Current implementation works well for 20–50 units.
-
-Advanced alternatives:
-
-- Spatial partitioning
-- Flow fields
-- NavMesh agents
-
----
 
 # Performance Considerations
 
@@ -189,25 +161,9 @@ Current prototype is optimized for assignment scale:
 
 ---
 
-## Current Bottleneck
 
-Collision detection currently uses nearby unit checks:
 
-O(n²)
 
-This is acceptable for prototype scale.
-
----
-
-## Future Optimizations
-
-For larger battles:
-
-- ECS/DOTS
-- Spatial partitioning
-- Job system
-- Object pooling
-- Better pathfinding
 
 ---
 
@@ -220,14 +176,6 @@ For larger battles:
 
 ---
 
-# Future Improvements
-
-- Combat system
-- Better pathfinding
-- Animation system
-- RTS mouse selection
-- Larger armies
-- Smarter obstacle avoidance
 
 ---
 
@@ -244,12 +192,4 @@ D → Move Right
 
 ---
 
-# Demo Video
 
-(Add your video link here)
-
----
-
-# Repository
-
-(Add GitHub repository link here)
